@@ -2,12 +2,15 @@
   "name": "ImageTrackingNative",
   "version": "0.0.1",
   "private": true,
-  "scripts": {
+    "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "postinstall": "node scripts/tools.js postinstall",
+    "iosCmake": "node scripts/tools.js iosCMake",
+    "windows": "react-native run-windows"
   },
   "dependencies": {
     "@babylonjs/core": "^5.22.1",
@@ -20,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
+    "@babylonjs/loaders": "^5.28.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^26.0.23",

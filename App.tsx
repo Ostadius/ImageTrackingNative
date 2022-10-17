@@ -55,8 +55,6 @@ const Section: React.FC<PropsWithChildren<{title: string}>> = ({
 };
 
 const App = () => {
-
-
   const isDarkMode = useColorScheme() === 'dark';
 
   const logInput = (enteredText: string) => {
